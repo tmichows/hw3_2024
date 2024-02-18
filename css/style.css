@@ -124,13 +124,16 @@ nav a:focus {
 /* Step 2a: Write selector/rule property to position the default position for the skip class element*/
 
 .skip a {
-
+  position: absolute;
+  top: -40px;
+  overflow: hidden;
 }
 
 /* Step 2b: Write selector/rule property to position the skip class element when it is in focus*/
 
 .skip a:focus {
-
+  position: static;
+  top: 20px;
 }
 
 /* Step 3: Write selector/rule property to style all elements when in focus*/
@@ -224,7 +227,7 @@ first div in the grid  and place it in the grid. */
 
   /* Step 9: Write the selector/rule property to style the nav element */
 
-  nav{
+  nav {
     text-align: right;
     padding: 30px 0px 30px 0px;
   }
